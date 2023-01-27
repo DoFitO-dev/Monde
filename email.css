@@ -23,3 +23,46 @@
     object-fit: cover;
     z-index: -1;
 }
+
+.input-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.input {
+    min-height: 50px;
+    min-width: 150px;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #b02150;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+}
+
+.button--submit {
+    min-height: 50px;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #b02150;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s all ease;
+    box-shadow: 0 0 5px #b02150,
+    0 0 25px #b02150;
+}
+
+.button--submit:hover {
+    box-shadow: 0 0 5px #b02150,
+    0 0 25px #b02150, 0 0 50px #b02150,
+    0 0 300px #b02150, 0 0 200px #b02150;
+}
+
+.input:focus, .input:focus-visible {
+    border-color: #7f514c;
+    outline: none;
+}

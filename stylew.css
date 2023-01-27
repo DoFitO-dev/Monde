@@ -52,6 +52,33 @@
    font-weight: 500;
    color: #fff;
  }
+
+ .time .d {
+  color: #fff1bb;
+ }
+ .time .h {
+  color: #b02150;
+ }
+ .time .m {
+  color: #ca7056;
+ }
+ .time .s {
+  color: #566590;
+ }
+
+ .time .dt {
+  color: #fff1bb;
+ }
+ .time .ht {
+  color: #b02150;
+ }
+ .time .mt {
+  color: #ca7056;
+ }
+ .time .st {
+  color: #566590;
+ }
+
  .time .number {
    font-size: 40px;
  }
