@@ -1,0 +1,122 @@
+ /* Google Fonts - Poppins */
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+ }
+ .container {
+   display: flex;
+   row-gap: 15px;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   height: 100vh;
+   width: 100%;
+   overflow: hidden;
+ }
+ .container .image {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   z-index: -1;
+ }
+ .container header {
+   font-size: 60px;
+   color: #fff;
+   font-weight: 600;
+   text-align: center;
+ }
+ .container p {
+   font-size: 16px;
+   font-weight: 400;
+   color: #fff;
+   max-width: 550px;
+   text-align: center;
+ }
+ .container .time-content {
+   display: flex;
+   column-gap: 30px;
+   align-items: center;
+ }
+ .time-content .time {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+ }
+ .time .number,
+ .time .text {
+   font-weight: 500;
+   color: #fff;
+ }
+ .time .number {
+   font-size: 40px;
+ }
+ .time .text {
+   text-transform: capitalize;
+   font-size: 12px;
+ }
+ .email-content {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 30px;
+   width: 100%;
+ }
+ .email-content p {
+   font-size: 13px;
+ }
+ /*.input-box {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 40px;
+   max-width: 360px;
+   width: 100%;
+   margin-top: 20px;
+   column-gap: 20px;
+ }*/
+
+ .input-box button {
+   margin-top: 20px;
+   height: 100%;
+   outline: none;
+   border: none;
+   overflow: hidden;
+   padding: 1px 35px;
+   border: 1px solid #fff1bb;
+   background: #fff1bb;
+   border-radius: 4px;
+   font-size: 16px;
+   font-weight: 500;
+   cursor: pointer;
+   text-decoration: none;
+   transition: .3s all ease;
+   text-transform: uppercase;
+   box-shadow: 0 0 5px #fff1bb,
+   0 0 25px #fff1bb;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ .input-box button:hover {
+    box-shadow: 0 0 5px #fff1bb,
+    0 0 25px #fff1bb, 0 0 50px #fff1bb,
+    0 0 300px #fff1bb, 0 0 200px #fff1bb;
+ }
+
+ .input-box button a {
+   text-decoration: none;
+   color: black;
+   text-align: center;
+ }
+
+
+ @media screen and (max-width: 300px) {
+   .container header {
+     font-size: 50px;
+   }
+ }
+ 
