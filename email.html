@@ -14,6 +14,11 @@
         <img src="images/background.jpg" alt="" class="image" />
         
         <div class="input-group">
+
+            <div class="top-btn">
+                <a href="index.html"><ion-icon name="exit" class="exit" title="Go back"></ion-icon></a>
+            </div>
+
             <form name="submit-to-google-sheet">
                 <input type="email" class="input" name="Email" placeholder="@gmail.com" required>
                 <input type="submit" value="Subscribe" class="button--submit">
@@ -40,7 +45,10 @@
             })
             .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>

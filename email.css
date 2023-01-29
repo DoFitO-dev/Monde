@@ -4,11 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container {
     display: flex;
-    row-gap: 15px;
+    row-gap: 0px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -27,6 +27,8 @@
 .input-group {
     /*display: -webkit-box;
     display: -ms-flexbox;*/
+    align-items: center;
+    justify-content: center;
     display: flex;
 }
 
@@ -38,7 +40,28 @@
     font-size: 15px;
     border: 1px solid #b02150;
     border-radius: 6px 0 0 6px;
-    background-color: transparent;
+    background: transparent;
+    backdrop-filter: blur(12px);
+    transition: .3s all ease;
+}
+
+.input:focus, .input:focus-visible {
+    backdrop-filter: blur(12px);
+    transition: .3s all ease;
+    box-shadow: 0 0 1px #b02150,
+    0 0 5px #b02150, 0 0 25px #b02150,
+    0 0 300px #b02150, 0 0 200px #b02150;
+    outline: none;
+}
+
+.input::placeholder {
+    transition: .3s all ease;
+}
+
+.input:focus-visible::placeholder {
+    top: 5%;
+    transition: .3s all ease;
+    color: rgba(255, 248, 230, 0.5);
 }
 
 .button--submit {
@@ -47,28 +70,51 @@
     border: none;
     border-radius: 0 6px 6px 0;
     background-color: #b02150;
-    color: rgb(0, 0, 0);
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     cursor: pointer;
     transition: .3s all ease;
+	color: rgba(255, 248, 230, 0.5);
     box-shadow: 0 0 5px #b02150,
     0 0 25px #b02150;
 }
 
 .button--submit:hover {
+    color: rgb(255, 255, 255);
     box-shadow: 0 0 5px #b02150,
     0 0 25px #b02150, 0 0 50px #b02150,
     0 0 300px #b02150, 0 0 200px #b02150;
-}
-
-.input:focus, .input:focus-visible {
-    border-color: #7f514c;
-    outline: none;
 }
 
 span {
     color : rgb(70, 180, 90);
     margin-top: 10px;
     display: block;
+}
+
+.top-btn {
+    margin-right: 10px;
+}
+
+.exit {
+	text-decoration: none;
+	background: #b02150;
+	color: #c0c0c0;
+	padding: 5px 5px;
+	height: 20px;
+	width: 20px;
+	border-radius: 5px;
+	justify-content: center;
+	cursor: pointer;
+    transition: .3s all ease;
+    box-shadow: 0 0 5px #b02150,
+    0 0 25px #b02150;
+}
+
+.exit:hover {
+	transition: .3s all ease;
+	color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px #b02150,
+    0 0 25px #b02150, 0 0 50px #b02150,
+    0 0 300px #b02150, 0 0 200px #b02150;
 }
