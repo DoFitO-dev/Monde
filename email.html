@@ -14,11 +14,33 @@
         <img src="images/background.jpg" alt="" class="image" />
         
         <div class="input-group">
-            <input type="email" class="input" id="Email" name="Email" placeholder="@gmail.com" autocomplete="off">
-            <input type="submit" value="Subscribe" class="button--submit">
+            <form name="submit-to-google-sheet">
+                <input type="email" class="input" name="Email" placeholder="@gmail.com" required>
+                <input type="submit" value="Subscribe" class="button--submit">
+            </form>
         </div>
+        <span id="msg"></span>
 
     </section>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyTzIhbaC7CU1Wn4EoKg02UlQhug4lgDdEJFGvpJhp8cJ4wcl5tGkeMcZjG2hXqusuRqQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Thank You For Subscribing!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 
 </body>
 </html>

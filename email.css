@@ -25,8 +25,8 @@
 }
 
 .input-group {
-    display: -webkit-box;
-    display: -ms-flexbox;
+    /*display: -webkit-box;
+    display: -ms-flexbox;*/
     display: flex;
 }
 
@@ -65,4 +65,10 @@
 .input:focus, .input:focus-visible {
     border-color: #7f514c;
     outline: none;
+}
+
+span {
+    color : rgb(70, 180, 90);
+    margin-top: 10px;
+    display: block;
 }
