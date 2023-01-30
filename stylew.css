@@ -1,5 +1,9 @@
  /* Google Fonts - Poppins */
  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
  * {
    margin: 0;
@@ -28,69 +32,63 @@
    font-size: 60px;
    color: #fff;
    font-weight: 600;
+   font-family: 'Unbounded', cursive;
    text-align: center;
  }
+
+ .container header span {
+   font-size: 60px;
+   color: #fff1bb;
+   font-weight: 600;
+   font-family: 'Unbounded', cursive;
+   text-align: center;
+ }
+
  .container p {
-   font-size: 16px;
+   font-size: 14px;
    font-weight: 400;
+   font-family: 'Unbounded', cursive;
    color: #fff;
    max-width: 550px;
    text-align: center;
  }
- .container .time-content {
-   display: flex;
-   column-gap: 30px;
-   align-items: center;
+
+ .container .progress {
+   height: 40px;
+   width: 500px;
+   margin-top: 20px;
+   border-radius: 20px;
+   background: transparent;
+   border: 1px solid #566590cc;
  }
- .time-content .time {
+
+ .progress .progress-done {
+   height: 100%;
+   width: 0;
    display: flex;
    align-items: center;
-   flex-direction: column;
- }
- .time .number,
- .time .text {
-   font-weight: 500;
+   justify-content: center;
+   border-radius: 20px;
+   
+   font-size: 16px;
+   opacity: 0;
    color: #fff;
+   box-shadow: 0 3px 3px -5px #b02150, 0 2px 5px #566590;
+   background: linear-gradient(to left, #b02150, #566590);
+   transition: 1s ease;
  }
 
- .time .d {
-  color: #fff1bb;
- }
- .time .h {
-  color: #b02150;
- }
- .time .m {
-  color: #ca7056;
- }
- .time .s {
-  color: #566590;
+ .progress-done span {
+  font-size: 15px;
+  margin-right: 5px;
+  color: #ffffffcc;
  }
 
- .time .dt {
-  color: #fff1bb;
- }
- .time .ht {
-  color: #b02150;
- }
- .time .mt {
-  color: #ca7056;
- }
- .time .st {
-  color: #566590;
- }
-
- .time .number {
-   font-size: 40px;
- }
- .time .text {
-   text-transform: capitalize;
-   font-size: 12px;
- }
  .email-content {
    display: flex;
    align-items: center;
    flex-direction: column;
-   margin-top: 30px;
+   margin-top: 20px;
    width: 100%;
  }
  .email-content p {

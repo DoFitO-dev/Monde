@@ -1,0 +1,111 @@
+    <!--HTML-->
+
+    <div class="time-content">
+          <div class="time days">
+            <span class="number d"></span>
+            <span class="text dt">days</span>
+          </div>
+          <div class="time hours">
+            <span class="number h"></span>
+            <span class="text ht">hours</span>
+          </div>
+          <div class="time minutes">
+            <span class="number m"></span>
+            <span class="text mt">minutes</span>
+          </div>
+          <div class="time seconds">
+            <span class="number s"></span>
+            <span class="text st">seconds</span>
+          </div>
+    </div>
+
+
+    <!--CSS-->
+
+ .container .time-content {
+   display: flex;
+   column-gap: 30px;
+   align-items: center;
+ }
+ .time-content .time {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+ }
+ .time .number,
+ .time .text {
+   font-weight: 500;
+   color: #fff;
+ }
+
+ .time .d {
+  color: #fff1bb;
+ }
+ .time .h {
+  color: #b02150;
+ }
+ .time .m {
+  color: #ca7056;
+ }
+ .time .s {
+  color: #566590;
+ }
+
+ .time .dt {
+  color: #fff1bb;
+ }
+ .time .ht {
+  color: #b02150;
+ }
+ .time .mt {
+  color: #ca7056;
+ }
+ .time .st {
+  color: #566590;
+ }
+
+ .time .number {
+   font-size: 40px;
+ }
+ .time .text {
+   text-transform: capitalize;
+   font-size: 12px;
+ }
+
+ <!--JS-->
+
+  
+ const seconds = document.querySelector(".seconds .number"),
+ minutes = document.querySelector(".minutes .number"),
+ hours = document.querySelector(".hours .number"),
+ days = document.querySelector(".days .number");
+
+let secValue = 59,
+ minValue = 59,
+ hourValue = 23,
+ dayValue = 131;
+
+const timeFunction = setInterval(() => {
+ secValue--;
+
+ if (secValue === 0) {
+   minValue--;
+   secValue = 60;
+ }
+ if (minValue === 0) {
+   hourValue--;
+   minValue = 60;
+ }
+ if (hourValue === 0) {
+   dayValue--;
+   hourValue = 24;
+ }
+
+ if (dayValue === 0) {
+   clearInterval(timeFunction);
+ }
+ seconds.textContent = secValue < 10 ? `0${secValue}` : secValue;
+ minutes.textContent = minValue < 10 ? `0${minValue}` : minValue;
+ hours.textContent = hourValue < 10 ? `0${hourValue}` : hourValue;
+ days.textContent = dayValue < 10 ? `0${dayValue}` : dayValue;
+}, 1000); //1000ms = 1s
