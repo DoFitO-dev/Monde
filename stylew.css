@@ -59,7 +59,7 @@
    margin-top: 20px;
    border-radius: 20px;
    background: transparent;
-   border: 1px solid #566590cc;
+   border: 1px solid #2b3349cc;
  }
 
  .progress .progress-done {
@@ -70,10 +70,10 @@
    justify-content: center;
    border-radius: 20px;
    
-   font-size: 16px;
+   font-size: 15px;
    opacity: 0;
    color: #fff;
-   box-shadow: 0 3px 3px -5px #b02150, 0 2px 5px #566590;
+   box-shadow: 0 1px 2px -5px #b02150, 0 2px 5px #566590;
    background: linear-gradient(to left, #b02150, #566590);
    transition: 1s ease;
  }
@@ -81,7 +81,7 @@
  .progress-done span {
   font-size: 15px;
   margin-right: 5px;
-  color: #ffffffcc;
+  color: #d7d6d6cc;
  }
 
  .email-content {
@@ -123,7 +123,7 @@
    text-transform: uppercase;
    box-shadow: 0 0 5px #fff1bb,
    0 0 25px #fff1bb;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: "Open Sans", sans-serif;
  }
 
  .input-box button:hover {
@@ -144,4 +144,29 @@
      font-size: 50px;
    }
  }
- 
+
+ .cursor {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #566590;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .1s;
+ }
+
+ .cursor2 {
+  transition: .50ms;
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #566590cc;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+ }

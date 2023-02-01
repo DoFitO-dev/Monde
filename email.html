@@ -9,6 +9,8 @@
     <title>Subscribe</title>
 </head>
 <body>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
 
     <section class="container">
         <img src="images/background.jpg" alt="" class="image" />
@@ -44,6 +46,14 @@
                 form.reset()
             })
             .catch(error => console.error('Error!', error.message))
+        })
+
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+
+        document.addEventListener("mousemove", function(e) {
+            cursor.style.cssText = cursor2.style.cssText = "left:" + e.clientX + 
+            "px; top: " + e.clientY + "px;";
         })
     </script>
 
