@@ -9,6 +9,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
     background-color: rgb(5, 10, 26);
 }
 
@@ -58,118 +62,33 @@ section {
     height: 100vh;
 }
 
-li, a, p, span, h1, button {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    padding: 45px 0;
+    top: 0;
+    z-index: 999;
+    transition: .3s linear;
+    border-bottom: 1px solid #566590;
 }
 
-header {
+.inner-width {
+    max-width: 12100px;
+    margin: auto;
+    padding: 0 50px;
+}
+
+.navbar .inner-width {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    padding: 25px 10px;
 }
 
-#logo {
-    padding: 7px 200px;
-    border-right: 1px solid rgba(113, 130, 161, 0.3);
+.logo i {
+    color: #fffc;
 }
 
-.logo {
-    cursor: pointer;
-}
-
-.logo img{
-    color: #ffffff;
-    width: 18%;
-    
-}
-
-.nav_links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-    padding: 10px 200px;
-    border-right: 1px solid rgba(113, 130, 161, 0.3);
-
-}
-
-.nav_links li {
-    display: inline-block;
-    padding: 0px 10px;
-}
-
-.nav_links li a {
-    font-size: 15px;
-    color: rgba(86, 86, 119, 0.8);
-    letter-spacing: 1px;
+.nav-links a {
     text-transform: uppercase;
-    font-family: 'Space Grotesk', sans-serif;
-
-}
-
-.nav_links li a:hover {
-    color: rgb(86, 86, 119);
-}
-
-button {
-    cursor: pointer;
-    font-size: 15px;
-    letter-spacing: 1px;
-    color: rgba(86, 86, 119, 0.8);
-    text-transform: uppercase;
-    font-family: 'Space Grotesk', sans-serif;
-    padding: 10px 20px;
-    border: none;
-}
-
-button:hover {
-    color: rgb(86, 86, 119);
-}
-
-#c-btn {
-    padding: 10px 200px;
-    border-left: 1px solid rgba(113, 130, 161, 0.3);
-}
-
-footer {
-    padding: 50px;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid rgba(113, 130, 161, 0.3);
-}
-
-#copyright {
-    color: rgba(86, 86, 119, 0.8);
-    background: transparent;
-    position: absolute;
-    top: 104%;
-    left: 15%;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    margin-right: 5px;
-}
-
-#copyright:hover {
-    color: rgb(86, 86, 119);
-}
-
-#privacy {
-    background: transparent;
-    color: rgba(86, 86, 119, 0.8);
-    position: absolute;
-    top: 104%;
-    left: 80%;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    margin-right: 5px;
-}
-
-#privacy:hover {
-    color: rgb(86, 86, 119);
 }
