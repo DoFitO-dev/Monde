@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    /*cursor: none;*/
 }
 
 body {
@@ -39,11 +40,11 @@ body {
     top: 0;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    transition: .1s;
+    transition: 40ms;
 }
   
 .cursor2 {
-    transition: .50ms;
+    transition: 10ms;
     position: fixed;
     width: 8px;
     height: 8px;
@@ -70,7 +71,7 @@ section {
     top: 0;
     z-index: 999;
     transition: .3s linear;
-    border-bottom: 1px solid #566590;
+    border-bottom: 1px solid #2c3349;
 }
 
 .inner-width {
@@ -86,9 +87,93 @@ section {
 }
 
 .logo i {
-    color: #fffc;
+    color: rgba(255, 255, 255);
+    font-size: 28px;
+}
+
+.menu-toggler {
+    background: none;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+
+.menu-toggler span {
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    margin: 10px 0;
+    position: relative;
+    transition: .3s linear;
 }
 
 .nav-links a {
+    color: #424253;
+    font-family: "Space Grotesk", sans-serif;
     text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.nav-links a:hover {
+    color: #505064;
+}
+
+@media screen and (max-width: 980px) {
+    .menu-toggler {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        overflow: hidden;
+        height: 185vh;
+        width: 100%;
+        background-color: rgb(5, 10, 26);
+        top: 0;
+        right: -100%;
+        max-width: 100%;
+        padding: 80px 50px;
+        transition: .50s ease-in;
+    }
+
+    .nav-links a {
+        display: block;
+        color: #fff;
+        font-family: 'Unbounded', cursive;
+        font-size: 30px;
+        font-weight: 800;
+        margin: 30px 0;
+    }
+
+    .nav-links a:hover {
+       color: #fff;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .menu-toggler.active span:nth-child(1) {
+        transform: rotate(-45deg);
+        height: 1px;
+        top: 4px;
+    }
+
+    .menu-toggler.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggler.active span:nth-child(3) {
+        transform: rotate(45deg);
+        height: 3px;
+        bottom: 14px;
+    }
+
 }
