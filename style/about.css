@@ -125,6 +125,14 @@ section {
     color: #505064;
 }
 
+.nav-links a .act-ab {
+    color: #6557aa;
+}
+
+.nav-links a .act-ab:hover {
+    color: #fff;
+}
+
 @media screen and (max-width: 980px) {
     .menu-toggler {
         display: block;
@@ -160,6 +168,10 @@ section {
 
     .nav-links.active {
         right: 0;
+    }
+
+    .nav-links a .act-ab {
+        color: #9887ec;
     }
 
     .menu-toggler.active span:nth-child(1) {
