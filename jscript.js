@@ -13,8 +13,8 @@ document.addEventListener("mousemove", function(e) {
   cursor.style.cssText = cursor2.style.cssText = "left:" + e.clientX + "px; top: " + e.clientY + "px;";
 })
 
-const menutgl = document.querySelector(".menu-toggler");
-const nav = document.querySelector(".nav-links");
+var menutgl = document.querySelector(".menu-toggler");
+var nav = document.querySelector(".nav-links");
 
 menutgl.addEventListener("click", () => {
   menutgl.classList.toggle("active");
