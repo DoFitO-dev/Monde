@@ -12,5 +12,3 @@ menutgl.addEventListener("click", () => {
   menutgl.classList.toggle("active");
   nav.classList.toggle("active");
 })
-
-const

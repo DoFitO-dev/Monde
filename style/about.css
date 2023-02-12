@@ -67,6 +67,8 @@ body {
     transform: translate(-50%, -50%);
 }
 
+
+
 section{
     position: relative;
     width: 100%;
@@ -81,7 +83,7 @@ section{
 .navbar {
     position: fixed;
     width: 100%;
-    background: none;
+    background: rgb(5, 10, 26);
     padding: 45px 0;
     top: 0;
     z-index: 999;
@@ -243,7 +245,6 @@ section{
 }
 
 .left img {
-    display: block;
     max-width: 101%;
     margin-top: -2px;
     max-height: 72rem;
