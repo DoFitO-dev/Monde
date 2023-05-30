@@ -13,8 +13,13 @@
     /*cursor: none;*/
 }
 
+:root {
+    --color: #9d84ff;
+}
+
 body {
     background-color: rgb(5, 10, 26);
+    color: #f2f2f2;
 }
 
 ::-webkit-scrollbar {
@@ -28,28 +33,32 @@ body {
     border-radius: 1rem;
 }
 
+::selection {
+    background: #7c7889cc;
+}
+
 .cursor {
     position: fixed;
-    width: 50px;
-    height: 50px;
+    width: 1.1rem;
+    height: 1.1rem;
     background: transparent;
-    border: 1px solid #566590;
+    backdrop-filter: invert(80%);
     border-radius: 50%;
     z-index: 100000;
     left: 0;
     top: 0;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    transition: 40ms;
+    transition: 10ms;
 }
   
 .cursor2 {
-    transition: 10ms;
+    transition: 40ms;
     position: fixed;
-    width: 8px;
-    height: 8px;
-    background: transparent;
-    border: 1px solid #566590cc;
+    width: 2px;
+    height: 2px;
+    background: #747083;
+    backdrop-filter: invert(80%);
     border-radius: 50%;
     z-index: 100000;
     left: 0;
@@ -58,15 +67,21 @@ body {
     transform: translate(-50%, -50%);
 }
 
-section {
+section{
+    position: relative;
     width: 100%;
-    height: 100vh;
-}
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;
+  }
 
 .navbar {
     position: fixed;
     width: 100%;
-    background: transparent;
+    background: rgb(5, 10, 26);
     padding: 45px 0;
     top: 0;
     z-index: 999;
@@ -112,7 +127,7 @@ section {
 }
 
 .nav-links a {
-    color: #424253;
+    color: #747083;
     font-family: "Space Grotesk", sans-serif;
     text-transform: uppercase;
     font-size: 15px;
@@ -122,10 +137,26 @@ section {
 }
 
 .nav-links a:hover {
-    color: #505064;
+    color: #747083cc;
+}
+
+.nav-links a .act-ab {
+    color: #6557aa;
+}
+
+.nav-links a .act-ab:hover {
+    color: #fff;
 }
 
 @media screen and (max-width: 980px) {
+    .cursor {
+        display: none;
+    }
+
+    .cursor2 {
+        display: none;
+    }
+
     .menu-toggler {
         display: block;
     }
@@ -160,6 +191,10 @@ section {
 
     .nav-links.active {
         right: 0;
+    }
+
+    .nav-links a .act-ab {
+        color: #9887ec;
     }
 
     .menu-toggler.active span:nth-child(1) {
