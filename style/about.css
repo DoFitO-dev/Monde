@@ -72,7 +72,7 @@ body {
 section{
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 1vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -220,7 +220,7 @@ section{
 .abt-cont {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -231,7 +231,7 @@ section{
 .abt-container {
     width: 100%;
     max-width: 1160px;
-    margin: 0 auto;
+    margin: 160px auto;
     padding: 0 20px;
     font-family: "Space Grotesk", sans-serif;
 }
