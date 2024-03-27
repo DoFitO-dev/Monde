@@ -15,11 +15,23 @@
 
 :root {
     --color: #9d84ff;
+    --bg-color: hsl(49 37% 94%);
+    --bg-color: #F6EDDC;
 }
 
 body {
     background-color: rgb(5, 10, 26);
     color: #f2f2f2;
+}
+
+body.night {
+    
+    background-color: var(--bg-color);
+    color: #161616;
+}
+
+h1.night {
+    color: #161616;
 }
 
 footer {
@@ -92,7 +104,23 @@ footer p{
     transform: translate(-50%, -50%);
 }
 
+button {
+    background: transparent;
+    border: none;
+}
 
+.dl {
+    background: transparent;
+    color: #9887ec;
+    margin-left: 16px;
+    cursor: pointer;
+    font-size: 23px;
+}
+
+.dl.active {
+    background: transparent;
+    color: #0bcf6a;
+}
 
 section{
     position: relative;
@@ -190,6 +218,17 @@ section{
     color: #fff;
 }
 
+@media screen and (max-width: 1550){
+    .progress-bar {
+        margin-top: 113px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .progress-bar {
+        margin-top: 119px;
+    }
+}
 @media screen and (max-width: 980px) {
     .abt-container, .main-container {
         max-width: 1000px;
@@ -205,6 +244,11 @@ section{
 
     .menu-toggler {
         display: block;
+    }
+
+    .d {
+        font-size: 20px;
+        color: #0bcf6a;
     }
 
     .navbar {

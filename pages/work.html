@@ -10,14 +10,14 @@
 
             gtag('config', 'G-3HG2S78TD7');
     </script>
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://kit.fontawesome.com/c487051ea6.js" crossorigin="anonymous"></script>
-    <title>Work</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="../style/work.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -26,10 +26,16 @@
 
     <div class="cursor"></div>
     <div class="cursor2"></div>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    
+    <!---NAVBAR--->
 
     <nav class="navbar">
         <div class="inner-width">
-            <a href="" class="logo"><i class="fa-solid fa-vector-square"></i></a>
+            <a href="" class="logo" id="htxs"><i class="fa-solid fa-vector-square"></i></a>
+            <h1 class="name">Hrishikesh N Shenoy</h1>
             <button class="menu-toggler">
                 <span></span>
                 <span></span>
@@ -38,14 +44,126 @@
 
             <div class="nav-links">
                 <a href="about.html">About</a>
-                <a href="work.html"><span class="act-ab">Work</span></a>
+                <a href="work.html"><span class="act-ab">Projs</span></a>
+                <!--<button><ion-icon name="sunny-outline" class="dl" id="light"></ion-icon></button>-->
+            </div>
+
+        </div>
+        
+    </nav>
+    <div class="progress-bar">
+        <div class="filled"></div>
+    </div>
+
+    <!---MAIN--->
+
+    <section class="main-cont">
+        <div class="main-container">
+            <h4>« latest work »</h4>
+            <div class="grid">
+
+                <div class="cl cl1">
+                    <div class="right">
+                        <h1>A-R-C-T</h1>
+                        <h5>Jan 18, 2024</h5> • <h5 class="pl1">Arduino</h5>
+                        <p>Arduino Based Real-Time Digital Clock With Temperature Display</p>
+                        <br>
+                        <p>This project demonstrates how to build a real-time clock (RTC) with a temperature display using Arduino, DS3231 RTC chip, and SSD1306 OLED display (128×64 pixel).</p>
+                        <a href="work.html" class="sh">SHOW ➡ </a>
+                    </div>
+
+                    <div class="left">
+                        <img src="../images/arduino-icon-2048x1397-pmu0lemh.png" alt="" class="wrk">
+                    </div>
+                </div>
+                <!---->
+                <div class="cl cl2">
+                    <div class="right">
+                        <h1>React App</h1>
+                        <h5>Dec 29, 2023</h5> • <h5 class="pl2">React</h5>
+                        <p>function updateFirstname() {
+
+                            let Firstname = prompt('First Name');
+                            
+                            }</p>
+                            <br>
+                        <p>1. HTML provides the basic structure of sites, which is enhanced and modified by other technologies like CSS and JavaScript. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="work.html" class="sh">SHOW ➡ </a>
+                    </div>
+        
+                    <div class="left">
+                        <img src="../images/React-icon.svg.png" class="wrk">
+                    </div>
+                    
+                </div>
+                <!---->
             </div>
         </div>
-    </nav>
+    </section>
+
+    <!--OTHERRR-->
+
+    <section class="work-cont">
+        <div class="work-container">
+            <h4>• other •</h4>
+            <div class="grid">
+                <div class="cl cl1">
+                    <div class="right">
+                        <h1>Node Script</h1>
+                        <h5>Sept 27, 2023</h5> • <h5 class="pl3">Node js</h5>
+                        <p>Arduino Based Real-Time Digital Clock With Temperature Display</p>
+                        <a href="work.html" class="sh">SHOW ➡</a>
+                    </div>
+
+                    
+                </div>
+                <!---->
+                <div class="cl cl2">
+                    <div class="right">
+                        <h1>TKnote</h1>
+                        <h5>Mar 28, 2023</h5> • <h5 class="pl4">web</h5>
+                        <p>function updateFirstname() {
+
+                            let Firstname = prompt('First Name');
+                            
+                        }</p>
+                        <a href="work.html" class="sh">SHOW ➡</a>
+                    </div>
+                </div>
+                <!---->
+                <div class="cl cl2">
+                    <div class="right">
+                        <h1>Flutter UI</h1>
+                        <h5>Feb 21, 2023</h5> • <h5 class="pl6">flutter</h5>
+                        <p>function updateFirstname() {
+
+                            let Firstname = prompt('First Name');
+                            
+                        }</p>
+                        <a href="work.html" class="sh">SHOW ➡</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---FOOTER--->
+
+    <footer>
+        <p>© Copyright 2024 Hrishikesh N Shenoy. Hosted by <a href="">Github Pages.</a></p>
+    </footer>
 
     <!-- JavaScript -->
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var lightmode = document.getElementById('light');
+        lightmode.addEventListener('click', function(){
+            lightmode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+    </script>
     <script src="../scripts/wrkscript.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

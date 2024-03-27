@@ -26,6 +26,11 @@
 
     <div class="cursor"></div>
     <div class="cursor2"></div>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    
+    <!---NAVBAR--->
 
     <nav class="navbar">
         <div class="inner-width">
@@ -39,13 +44,17 @@
             <div class="nav-links">
                 <a href="about.html"><span class="act-ab">About</span></a>
                 <a href="work.html">Work</a>
+                <!--<button><ion-icon name="sunny-outline" class="dl" id="light"></ion-icon></button>-->
             </div>
+
         </div>
         
     </nav>
     <div class="progress-bar">
         <div class="filled"></div>
     </div>
+
+    <!---ABOUT--->
 
     <section class="abt-cont">
         <div class="abt-container">
@@ -67,14 +76,16 @@
         </div>
     </section>
 
+    <!---MAIN--->
+
     <section class="main-cont">
         <div class="main-container">
             <div class="grid">
 
                 <div class="right">
-                    <h4>latest work</h4>
-                    <h1>proj-1</h1>
-                    <h5>Jan 18, 2010</h5>
+                    <h4>« latest work »</h4>
+                    <h1>A-R-C-T</h1>
+                    <h5>Jan 18, 2024</h5>
                     <p>Arduino Based Real-Time Digital Clock With Temperature Display</p>
                     <br>
                     <p>This project demonstrates how to build a real-time clock (RTC) with a temperature display using Arduino, DS3231 RTC chip, and SSD1306 OLED display (128×64 pixel).</p>
@@ -86,8 +97,8 @@
                 </div>
 
                 <div class="right">
-                    <h1>proj-2</h1>
-                    <h5>Dec 29, 2009</h5>
+                    <h1>React App</h1>
+                    <h5>Dec 29, 2023</h5>
                     <p>function updateFirstname() {
 
                         let Firstname = prompt('First Name');
@@ -102,7 +113,7 @@
                 </div>
     
                 <div class="left">
-                    <img src="../images/png-clipart-html-js-and-css-logo-cascading-style-sheets-javascript-html-css3-jquery-logo-miscellaneous-text.png"alt="" class="wrk">
+                    <img src="../images/React-icon.svg.png"alt="" class="wrk">
                 </div>
             </div>
         </div>
@@ -113,8 +124,16 @@
     </footer>
 
     <!-- JavaScript -->
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var lightmode = document.getElementById('light');
+        lightmode.addEventListener('click', function(){
+            lightmode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+    </script>
     <script src="../scripts/abscript.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
