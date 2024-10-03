@@ -347,11 +347,22 @@ section{
 }
 
 .left img {
-    border-radius: 5px;
-    max-width: 101%;
+    border-radius: 20px;
+    max-width: 75%;
     margin-top: -2px;
     max-height: 20rem;
     vertical-align: middle;
+    
+}
+
+.left .pfp{
+    z-index: 1;
+    transition: .3s linear;
+}
+
+.left .pfp:hover {
+    transition: .3s linear;
+    box-shadow: 0 0 50px #046a38;
 }
 
 .left .wrk {
