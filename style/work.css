@@ -552,7 +552,8 @@ h4 {
 }
 
 .right span:hover {
-    
+    box-shadow: 0 0 5px #9d84ff,
+    0 0 25px #9d84ff;
 }
 
 .right .sh:hover{
