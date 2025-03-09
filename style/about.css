@@ -17,6 +17,7 @@
     --color: #9d84ff;
     --bg-color: hsl(49 37% 94%);
     --bg-color: #F6EDDC;
+    --bg-lol: linear-gradient(59.63426421727911deg, rgba(22, 22, 22,1) 38.42861450572394%,rgba(32, 21, 89,1) 88.8596549078404%);
 }
 
 body {
