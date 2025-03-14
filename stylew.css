@@ -15,6 +15,7 @@
 
  body {
   font-family: "JetBrains Mono", monospace;
+  background: #05091a;
  }
 
  section {
@@ -22,8 +23,141 @@
    width: 100%;
    height: 100vh;
    overflow: hidden;
-   background: #161616;
  }
+
+ .container {
+  display: flex;
+  row-gap: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.container .image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.container header {
+  font-size: 60px;
+  color: #fff;
+  font-weight: 600;
+  font-family: 'Unbounded', cursive;
+  text-align: center;
+}
+
+.container header span {
+  font-size: 60px;
+  color: #fff1bb;
+  font-weight: 600;
+  font-family: 'Unbounded', cursive;
+  text-align: center;
+}
+
+.container p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Unbounded', cursive;
+  color: #fff;
+  max-width: 550px;
+  text-align: center;
+}
+
+.container .progress {
+  height: 40px;
+  width: 500px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #2b3349cc;
+}
+
+.progress .progress-done {
+  height: 100%;
+  width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  
+  font-size: 15px;
+  opacity: 0;
+  color: #fff;
+  box-shadow: 0 1px 2px -5px #b02150, 0 2px 5px #566590;
+  background: linear-gradient(to left, #b02150, #566590);
+  transition: 1s ease;
+}
+
+.progress-done span {
+ font-size: 15px;
+ margin-right: 5px;
+ color: #d7d6d6cc;
+}
+
+.email-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+.email-content p {
+  font-size: 13px;
+}
+/*.input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  max-width: 360px;
+  width: 100%;
+  margin-top: 20px;
+  column-gap: 20px;
+}*/
+
+.input-box button {
+  margin-top: 20px;
+  height: 100%;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  padding: 1px 35px;
+  border: 1px solid #fff1bb;
+  background: #fff1bb;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s all ease;
+  text-transform: uppercase;
+  box-shadow: 0 0 5px #fff1bb,
+  0 0 25px #fff1bb;
+  font-family: "Open Sans", sans-serif;
+}
+
+.input-box button:hover {
+   box-shadow: 0 0 5px #fff1bb,
+   0 0 25px #fff1bb, 0 0 50px #fff1bb,
+   0 0 300px #fff1bb, 0 0 200px #fff1bb;
+}
+
+.input-box button a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 300px) {
+  .container header {
+    font-size: 50px;
+  }
+}
  
  h1 {
   color: #fff;
@@ -31,7 +165,7 @@
   font-weight: 700;
   }
 
-.container {
+.cont {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,15 +173,15 @@
   gap: 100px;
 }
 
-.container .card {
+.cont .card {
   position: relative;
   width: 200px;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid #fff;
-  box-shadow: 0px 0px 5px #fff;
+  border: 3px solid #554a91;
+  box-shadow: 0px 0px 5px #9d84ff;
   border-radius: 20px;
   font-size: 5em;
   font-weight: 700;
