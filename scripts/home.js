@@ -46,3 +46,14 @@ function setTheme(dark) {
         localStorage.setItem('theme', 'light');
     }
 }
+
+// Auto-close menu on nav link click (for mobile)
+document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            menuToggle.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+});

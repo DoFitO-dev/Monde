@@ -9,40 +9,94 @@
 </head>
 <body>
 
-  <header class="navbar-wrapper">
-    <nav class="navbar" id="navbar">
-      <div class="logo" id="logo">🍦 <a href="">DoFii</a></div>
+<!--LANDING PAGE-->
 
-      <ul class="nav-links" id="nav-links">
-        <li>🏠 <a href="#" style="color: #d4bf9a;">Home</a></li>
-        <li>🧠 <a href="#" style="color: #d4bf9a;">Projects</a></li>
-        <li>📜 <a href="#" style="color: #d4bf9a;">Resume</a></li>
-        <li>📫 <a href="#" style="color: #d4bf9a;">Contact</a></li>
-      </ul>
+<header class="navbar-wrapper">
+  <nav class="navbar" id="navbar">
+    <div class="logo" id="logo">🍦 <a href="">DoFii</a></div>
 
-      <div class="theme-toggle" id="theme-toggle">🌙</div>
+    <ul class="nav-links" id="nav-links">
+      <li>🏠 <a href="#home">Home</a></li>
+      <li>🧠 <a href="#about">About me</a></li>
+      <li>📫 <a href="#contact">Contact</a></li>
+    </ul>
 
-      <div class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
+    <div class="theme-toggle" id="theme-toggle">🌙</div>
 
-  <main>
-    <div class="sparkle-wrapper">
-      <div class="sparkle-container">
-        <h1 class="bounce-text">
-          <span>h</span><span>e</span><span>l</span><span>l</span><span>o</span>
-          <div class="sparkles">
-            <span></span><span></span><span></span><span></span><span></span>
-          </div>
-        </h1>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+<main id="home">
+  <div class="sparkle-wrapper">
+    <div class="sparkle-container">
+      <h1 class="bounce-text">
+        <span>h</span><span>e</span><span>l</span><span>l</span><span>o</span>
+        <div class="sparkles">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </h1>
+    </div>
+  </div>
+</main>
+
+<!--BOUT ME-->
+
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2 class="section-title">🧪 About Me</h2>
+      <p>
+        Hey, I’m <strong><span class="tf1">Dofi</span> —<span class="tf2"> the Digital Alchemist</span>.</strong> I bend code, spin up servers in WSL2, and tunnel through CGNAT like it’s magic. ✨ <br><br>
+        I love building things that are clever, clean, and a little chaotic. Whether it’s a glowing frontend or a Minecraft server with FRP voodoo, I dive deep into both the surface and the silicon.<br><br>
+        Always exploring, always tweaking — and now decoding what makes hardware tick 🔍.
+      </p>
+
+      <div class="tech-stack">
+        <h3>⚙️ Tech Stack</h3>
+        <ul class="stack-list">
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>Docker & WSL2</li>
+          <li>Linux / Terminal</li>
+          <li>Cloudflare Tunnels</li>
+        </ul>
       </div>
     </div>
-  </main>
 
-  <script src="../scripts/home.js"></script>
+    <div class="about-image">
+      <div class="sparkle-frame">
+        <!-- You can add a profile pic or sparkly "Dofi" image here -->
+        <img src="../images/pfp.jpg" alt="Dofi" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--CONTACT SECTION-->
+<section class="contact" id="contact">
+  <h2>📫 Get in Touch</h2>
+  <p>Have a project, question, or just want to say hi? I'd love to hear from you!</p>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">✨ Send Message</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>© 2025 DoFii — The Digital Alchemist 🧪</p>
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="scroll-top">⬆️ Back to top</button>
+  </div>
+</footer>
+
+<script src="../scripts/home.js"></script>
 </body>
 </html>
